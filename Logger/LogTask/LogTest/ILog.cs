@@ -6,6 +6,11 @@ namespace LogTest
     public interface ILog
     {
         /// <summary>
+        /// Close the log file
+        /// </summary>
+        void CloseFile();
+
+        /// <summary>
         /// Stop the logging. If any outstadning logs theses will not be written to Log
         /// </summary>
         void StopWithoutFlush();
